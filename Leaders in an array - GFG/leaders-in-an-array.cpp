@@ -8,9 +8,12 @@ using namespace std;
 // } Driver Code Ends
     
 
+    
+
 class Solution{
     //Function to find the leaders in the array.
     public:
+    
     vector<int> leaders(int a[], int n){
         // Code here
         vector<int> v;
