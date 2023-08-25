@@ -13,24 +13,13 @@ public:
 	int isPalindrome(string S)
 	{
 	    // Your code goes here
-	    int a=0;
-	   // if(S.size()%2==0)
-	   // {
-	        for( int i=0;i<S.size()/2;i++)
-	        {
-	            if(S[i]!=S[S.size()-1-i])
-	            return 0;
-	        }
-	   // }
-	   // else
-	   // {
-	   //     for( int i=0;i<S.size()/2;i++)
-	   //     {
-	   //         if(S[i]!=S[S.size()-1-i])
-	   //         return 0;
-	   //     }
-	   // }
-	   return 1;
+	    for(int i=0;i<S.size()/2;i++)
+	    {
+	        if(S[i]!=S[S.size()-i-1])
+	        return 0;
+	    }
+	    
+	    return 1;
 	}
 
 };
