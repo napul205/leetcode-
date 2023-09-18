@@ -14,17 +14,13 @@ class Solution{
     bool isPowerofTwo(long long n){
         
         // Your code here  
-        int c=0;
-        while(n>0)
-        {
-            c+= n & 1;
-            n=n>>1;
-        }
         
-        if(c==1)
-        return true;
-        else
+        
+        if(n<=0)
         return false;
+        
+        
+        return (n&(n-1))==0;
         
     }
 };
