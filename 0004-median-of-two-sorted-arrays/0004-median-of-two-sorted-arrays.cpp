@@ -2,9 +2,7 @@ class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         vector<int> v;
-        //1.merge both array
-        //
-        //
+      
 
         for(auto num:nums1)  
             v.push_back(num);
