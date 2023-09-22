@@ -1,16 +1,14 @@
 class Solution {
 public:
-    bool isSubsequence(std::string s, std::string t) {
-        int index = 0;
-        
-        for (int i = 0; i < s.length(); i++) {
-            index = t.find(s[i], index);
-            cout<<index<<endl;
-            if (index == std::string::npos) {
-                return false;
-            }
-            index++;
+    bool isSubsequence(string s, string t) {
+        int n=s.size(),m=t.size();
+        int j=0;
+        for( int i=0;i<m;i++)
+        {
+            if(s[j]==t[i])
+                j++;
         }
-        return true;
+        
+        return (j==n);
     }
 };
